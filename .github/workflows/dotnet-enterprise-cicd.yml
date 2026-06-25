@@ -149,6 +149,7 @@ jobs:
       # ── 🤖 CLAUDE AGENT 2: Security Code Reviewer ────────
       # Reviews the actual C# source for OWASP Top 10 issues,
       # insecure patterns, and hardcoded secrets.
+      # New Changes added in the PR are prioritized for review.
       - name: Claude Agent 2 - Security Code Reviewer
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
