@@ -233,7 +233,7 @@ jobs:
 
       # ── Upload all Claude Agent Reports ──────────────────
       - name: Upload Claude Security Reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: nvidia-security-reports
@@ -283,7 +283,7 @@ jobs:
           --verbosity normal
 
       - name: Upload Test Results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: unit-test-results
@@ -354,7 +354,7 @@ jobs:
           ConnectionStrings__DefaultConnection: "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=ecommerce_test;"
 
       - name: Upload Integration Test Results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: integration-test-results
@@ -508,7 +508,7 @@ jobs:
           -p:DebugSymbols=false
 
       - name: Upload Published Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ecommerce-api-publish
           path: ./publish
