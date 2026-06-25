@@ -534,7 +534,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download Published Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ecommerce-api-publish
           path: ./publish
@@ -569,7 +569,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download Published Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ecommerce-api-publish
           path: ./publish
