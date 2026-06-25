@@ -145,7 +145,7 @@ jobs:
           echo "Collecting .cs source files..."
           find src -name "*.cs" | head -20 | xargs cat > combined-source.txt 2>/dev/null || true
           echo "Source collection complete. Size: $(wc -c < combined-source.txt) bytes"
-//// Triggering first pipeline/////
+
       # ── 🤖 CLAUDE AGENT 2: Security Code Reviewer ────────
       # Reviews the actual C# source for OWASP Top 10 issues,
       # insecure patterns, and hardcoded secrets.
