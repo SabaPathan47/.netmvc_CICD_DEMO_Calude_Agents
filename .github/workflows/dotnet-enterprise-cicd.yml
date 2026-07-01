@@ -10,7 +10,7 @@ env:
   DOTNET_VERSION: '8.0.x'
   BUILD_CONFIGURATION: Release
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository | lowercase }}
+  IMAGE_NAME: ${{ github.repository }}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
